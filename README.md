@@ -6,7 +6,7 @@
 	
     ID		: Integer		Primary Key
     Name	: Varchar(100)	
-    Mail_id 	: Varchar(150)
+    Mail_id	: Varchar(150)
     
 ### Bookmark:
 	
