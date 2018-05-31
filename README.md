@@ -35,24 +35,40 @@
 
 ### User functions:
 
-    Get:/user         list of user id
-    post:/user        create new user
-    put:/user/id      update an user
-    Delete:/user/id   delete user with that id
-    Get:/user/id      retrieving data of that user
+    GET    /User          List of Users
+    POST   /User          Create new User
+    PUT    /User/<id>     Update a User
+    DELETE /User/<id>     Delete User having the given id
+    GET    /User/<id>     Retrieving data of the User with given id
 
 ### Bookmark functions:
 
-    Get:/Bookmark          list of Bookmark id
-    post:/Bookmark         create new Bookmark
-    put:/Bookmark/id       update an Bookmark
-    Delete:/Bookmark/id    delete Bookmark with that id
-    Get:/Bookmark/id       retrieving data of that Bookmark
+    GET    /Bookmark          List of Bookmarks
+    POST   /Bookmark          Create new Bookmark
+    PUT    /Bookmark/<id>     Update a Bookmark
+    DELETE /Bookmark/<id>     Delete Bookmark with the given id
+    GET    /Bookmark/<id>     Retrieving data of the Bookmark with given id
 
 ### Tag functions:
 
-    Get:/tag          list of tag id
-    post:/tag         create new tag
-    put:/tag/id       update an tag
-    Delete:/tag/id    delete tag with that id
-    Get:/tag/id       retrieving data of that tag
+    GET    /Tag          List of tags
+    POST   /Tag          Create new tag
+    PUT    /Tag/<id>     Update a tag
+    DELETE /Tag/<id>     Delete tag with the given id
+    GET    /Tag/<id>     Retrieving data of the tag with given id
+    
+### User_Bookmarks:
+
+    GET    /User/Bookmark	List of all Bookmarks for every User
+    GET    /User/<id>/Bookmark	List of Bookmarks of User having the given id.
+    
+### Bookmarks_Tags:
+
+    GET    /Bookmark/Tag	List of all tags for every Bookmark
+    GET    /Tag/Bookmark	List of all Bookmarks for every Tag
+    GET    /Bookmark/<id>/Tag	List of tags for a particular Bookmark
+    GET    /Tag/<id>/Bookmark	List of all bookmarks for a particular tag
+    
+    
+    
+    
